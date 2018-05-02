@@ -1,44 +1,65 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
-
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 
 import BlogRoll from '../components/BlogRoll'
 
 class PostTemplate extends Component {
   render() {
-    const post = this.props.data.wordpressPost
+
+    const postCategory = this.props.pathContext.name
+    const posts = this.props.data.allWordpressPost.edges
 
     return (
-      <div style={{marginTop:'1.5em'}}>
+      <div>
+        <h1>Category: {postCategory}</h1>
+
+        {posts.map(({ node }) => (
+          <div key={node.id}>
+            <h2>
+              <Link to={`/post/${node.slug}`}>{node.title}</Link>
+            </h2>
+            <div
+              className="excerpt"
+              dangerouslySetInnerHTML={{ __html: node.excerpt }}
+            />
+            <i>{node.date}</i>
+          </div>
+        ))}
+
         <div>
-          <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-          <div dangerouslySetInnerHTML={{ __html: post.content }} />
-        </div>
-        <div width={4}>
           <BlogRoll />
         </div>
       </div>
     )
   }
 }
+
 //<img src={post.image.sizes.thumbnail} />
 
 PostTemplate.propTypes = {
   data: PropTypes.object.isRequired,
-  edges: PropTypes.array
+  edges: PropTypes.array,
 }
 
 export default PostTemplate
 
 export const pageQuery = graphql`
-  query currentPostQuery($id: String!) {
-    wordpressPost(id: { eq: $id }) {
-      title
-      content
-    }
-    site {
-      siteMetadata {
-        title
+  query currentPostCategoriesQuery($slug: String!) {
+    allWordpressPost(filter: { categories: { slug: { eq: $slug } } }) {
+      edges {
+        node {
+          id
+          title
+          slug
+          date
+          excerpt
+          categories {
+            id
+            name
+            slug
+          }
+        }
       }
     }
   }

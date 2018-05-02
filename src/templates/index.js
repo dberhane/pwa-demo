@@ -18,9 +18,6 @@ const IndexPage = ({ data, pathContext }) => {
   const previousUrl = index - 1 == 1 ? '' : (index - 1).toString()
   const nextUrl = (index + 1).toString()
 
-  console.log(data)
-  console.log(pathContext)
-
   return (
     <div style={{ marginTop: '1.5em' }}>
       <div width={12}>
