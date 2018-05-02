@@ -13,19 +13,27 @@ const Header = () => (
       />
     </Link>
 
-    <ul>
-      <li>
-        <Link to={'/'}>
-          <img src={logo} alt="Logo" style={{ width: '12.0em' }} />
+    <nav className="clearfix white bg-black">
+      <div className="sm-col">
+          <Link to={'/'} className="btn py2">
+            <img src={logo} alt="Logo" style={{ width: '12.0em' }} />
+          </Link>
+           <Link to={'/'} className="btn py2">
+            BMJ Open blogs
+          </Link>
+      </div>
+      <div className="sm-col-right">
+        <Link to="/" className="btn py2">
+          About us
         </Link>
-      </li>
-      <li>
-        <Link to={'/'}>BMJ Open blogs</Link>
-      </li>
-      <li>About us</li>
-      <li>Topic Index</li>
-      <li>Home</li>
-    </ul>
+        <Link to="/" className="btn py2">
+          Topic Index
+        </Link>
+        <Link to="/" className="btn py2">
+          Home
+        </Link>
+      </div>
+    </nav>
   </div>
 )
 

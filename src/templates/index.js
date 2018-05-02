@@ -19,18 +19,17 @@ const IndexPage = ({ data, pathContext }) => {
   const nextUrl = (index + 1).toString()
 
   return (
-    <div style={{ marginTop: '1.5em' }}>
-      <div width={12}>
+    <div className="clearfix mxn2">
+      <div className="sm-col sm-col-8 md-col-9 px2">
         <h1>Latest blogs</h1>
 
         <ul>
           {group.map(({ node }) => (
-            <li key={node.id} className={'post'} style={{ marginBottom: 50 }}>
+            <li key={node.id}  style={{ marginBottom: 50 }}>
               <h2>
                 <Link to={'/post/' + node.slug}>{node.title}</Link>
               </h2>
               <div
-                className={'post-content'}
                 dangerouslySetInnerHTML={{ __html: node.excerpt }}
               />
               <i>{node.date}</i>
@@ -40,19 +39,19 @@ const IndexPage = ({ data, pathContext }) => {
 
         <div>
           <button>
-              <NavLink
-                test={first}
-                url={'/' + previousUrl}
-                text="Previous Page"
-              />
+            <NavLink
+              test={first}
+              url={'/' + previousUrl}
+              text="Previous Page"
+            />
           </button>
           <button>
-              <NavLink test={last} url={'/' + nextUrl} text="Next Page" />
+            <NavLink test={last} url={'/' + nextUrl} text="Next Page" />
           </button>
         </div>
       </div>
 
-      <div width={4}>
+      <div className="sm-col sm-col-4 md-col-3 px2 sm-show">
         <categories />
         <BlogRoll />
         <mostRead />

@@ -4,6 +4,12 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "basscss": "^8.0.2",
+    "basscss-background-colors": "^2.1.0",
+    "basscss-background-images": "^0.1.1",
+    "basscss-btn": "^1.1.1",
+    "basscss-colors": "^2.2.0",
+    "basscss-utility-headings": "^0.1.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-paginate": "^1.0.14",
