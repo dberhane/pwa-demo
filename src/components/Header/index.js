@@ -13,19 +13,23 @@ const Header = () => (
       />
     </Link>
 
-    <ul>
-      <li>
-        <Link to={'/'}>
-          <img src={logo} alt="Logo" style={{ width: '12.0em' }} />
-        </Link>
-      </li>
-      <li>
-        <Link to={'/'}>BMJ Open blogs</Link>
-      </li>
-      <li>About us</li>
-      <li>Topic Index</li>
-      <li>Home</li>
-    </ul>
+    <header className="sticky">
+      <Link className="logo" to={'/'}>
+        <img src={logo} alt="Logo" style={{ width: '12.0em' }} />
+      </Link>
+      <Link className="button" to={'/'}>
+        BMJ Open blogs
+      </Link>
+      <Link className="button" to={'/'}>
+        About us
+      </Link>
+      <Link className="button" to={'/'}>
+        Topic Index
+      </Link>
+      <Link className="button" to={'/'}>
+        Home
+      </Link>
+    </header>
   </div>
 )
 

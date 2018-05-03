@@ -19,43 +19,53 @@ const IndexPage = ({ data, pathContext }) => {
   const nextUrl = (index + 1).toString()
 
   return (
-    <div style={{ marginTop: '1.5em' }}>
-      <div width={12}>
-        <h1>Latest blogs</h1>
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-12 col-md-12 col-lg-7 col-lg-offset-1">
+          <div width={12}>
+            <h1>Latest blogs</h1>
 
-        <ul>
-          {group.map(({ node }) => (
-            <li key={node.id} className={'post'} style={{ marginBottom: 50 }}>
-              <h2>
-                <Link to={'/post/' + node.slug}>{node.title}</Link>
-              </h2>
-              <div
-                className={'post-content'}
-                dangerouslySetInnerHTML={{ __html: node.excerpt }}
-              />
-              <i>{node.date}</i>
-            </li>
-          ))}
-        </ul>
+            <ul>
+              {group.map(({ node }) => (
+                <li
+                  key={node.id}
+                  className={'post'}
+                  style={{ marginBottom: 50 }}
+                >
+                  <h2>
+                    <Link to={'/post/' + node.slug}>{node.title}</Link>
+                  </h2>
+                  <div
+                    className={'post-content'}
+                    dangerouslySetInnerHTML={{ __html: node.excerpt }}
+                  />
+                  <i>{node.date}</i>
+                </li>
+              ))}
+            </ul>
 
-        <div>
-          <button>
-              <NavLink
-                test={first}
-                url={'/' + previousUrl}
-                text="Previous Page"
-              />
-          </button>
-          <button>
-              <NavLink test={last} url={'/' + nextUrl} text="Next Page" />
-          </button>
+            <div>
+              <button>
+                <NavLink
+                  test={first}
+                  url={'/' + previousUrl}
+                  text="Previous Page"
+                />
+              </button>
+              <button>
+                <NavLink test={last} url={'/' + nextUrl} text="Next Page" />
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div width={4}>
-        <categories />
-        <BlogRoll />
-        <mostRead />
+        <div className="col-sm-12 col-md-12 col-lg-3">
+          <div width={4}>
+            <categories />
+            <BlogRoll />
+            <mostRead />
+          </div>
+        </div>
       </div>
     </div>
   )
