@@ -4,33 +4,52 @@ import banner from './ad001.gif'
 import logo from './bmjopen-logo.png'
 
 const Header = () => (
-  <div>
-    <Link to={'/'}>
-      <img
-        src={banner}
-        alt="banner"
-        style={{ maxHeight: 90, maxWidth: 728, marginTop: '1em' }}
-      />
-    </Link>
-
-    <header className="sticky">
-      <Link className="logo" to={'/'}>
-        <img src={logo} alt="Logo" style={{ width: '12.0em' }} />
+  <div className="container">
+    <div className="row">
+      <Link to={'/'}>
+        <img src={banner} alt="banner" />
       </Link>
-      <Link className="button" to={'/'}>
+    </div>
+    <header className="sticky">
+    <label htmlFor="drawer-checkbox" className="button drawer-toggle"></label>
+      <Link className="logo" to={'/'}>
+        <img src={logo} alt="Logo" style={{ maxWidth: '12.0em' }} />
+      </Link>
+      <Link className="button hidden-sm" to={'/'}>
         BMJ Open blogs
       </Link>
-      <Link className="button" to={'/'}>
+      <Link className="button hidden-sm" to={'/'}>
         About us
       </Link>
-      <Link className="button" to={'/'}>
+      <Link className="button hidden-sm" to={'/'}>
         Topic Index
       </Link>
-      <Link className="button" to={'/'}>
+      <Link className="button hidden-sm" to={'/'}>
         Home
       </Link>
     </header>
-  </div>
+    
+    <div className="row hidden-md hidden-lg">
+    <input type="checkbox" id="drawer-checkbox"/>
+      <div className="col-md-3 drawer">
+      <label htmlFor="drawer-checkbox" className="close"></label>
+        <nav>
+          <Link className="" to={'/'}>
+            BMJ Open blogs
+          </Link>
+          <Link className="" to={'/'}>
+            About us
+          </Link>
+          <Link className="" to={'/'}>
+            Topic Index
+          </Link>
+          <Link className="" to={'/'}>
+            Home
+          </Link>
+        </nav>
+      </div>
+     </div> 
+  </div> 
 )
 
 export default Header

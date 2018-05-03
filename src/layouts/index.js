@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
-//import './index.css'
-//import 'mini.css/dist/mini-default.min.css'
-import 'mini.css/dist/mini-pwa.min.css' 
+import './index.css'
+import 'mini.css/dist/mini-default.min.css'
+//import 'mini.css/dist/mini-pwa.min.css'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -17,9 +17,14 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div>
-      {children()}
-    </div>
+    <div>{children()}</div>
+
+    <footer>
+      <p>
+        &copy; BMJ Publishing Group Ltd. 2018 | <a href="#">About</a> |{' '}
+        <a href="#">Terms of use</a>
+      </p>
+    </footer>
   </div>
 )
 
