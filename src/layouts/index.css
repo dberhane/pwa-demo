@@ -1,11 +1,14 @@
-@media screen and (max-width: 767px){
-  .drawer > nav {
-    border: 0;
-  }
+.drawer nav {
+  background-color: blueviolet;
 }
-@media screen and (min-width: 768px){
-  .drawer {
-    background: 0;
-    border: 0;
-  }
+.drawer .close {
+  background-color:azure;
+}
+.drawer nav a,  .drawer nav a:visited {
+  color:azure
+}
+
+.drawer nav a .button {
+  background-color: blueviolet;
+  background: transparent;
 }

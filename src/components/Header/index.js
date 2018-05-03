@@ -34,16 +34,19 @@ const Header = () => (
       <div className="col-md-3 drawer">
       <label htmlFor="drawer-checkbox" className="close"></label>
         <nav>
-          <Link className="" to={'/'}>
+          <Link className="button" to={'/'}>
             BMJ Open blogs
           </Link>
-          <Link className="" to={'/'}>
+          <br/>
+          <Link className="button" to={'/'}>
             About us
           </Link>
-          <Link className="" to={'/'}>
+          <br/>
+          <Link className="button" to={'/'}>
             Topic Index
           </Link>
-          <Link className="" to={'/'}>
+          <br/>
+          <Link className="button" to={'/'}>
             Home
           </Link>
         </nav>
