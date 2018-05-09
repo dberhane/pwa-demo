@@ -25,23 +25,30 @@ const IndexPage = ({ data, pathContext }) => {
           <div width={12}>
             <h1>Latest blogs</h1>
 
-            <ul>
-              {group.map(({ node }) => (
+            <ul
+              className="postItems"
+              style={{ listStyleType: 'none', margin: 0, padding: 0 }}
+            >
+              {group.map(({ node }) => [
                 <li
                   key={node.id}
                   className={'post'}
-                  style={{ marginBottom: 50 }}
+                  style={{ marginTop: 20, marginBottom: 40 }}
                 >
-                  <h2>
-                    <Link to={'/post/' + node.slug}>{node.title}</Link>
-                  </h2>
+                  <Link to={'/post/' + node.slug}>
+                    <h3>{node.title}</h3>
+                  </Link>
+
                   <div
                     className={'post-content'}
                     dangerouslySetInnerHTML={{ __html: node.excerpt }}
                   />
-                  <i>{node.date}</i>
-                </li>
-              ))}
+                  <div style={{ paddingLeft: 10 }}>
+                    <i>{node.date}</i>
+                  </div>
+                </li>,
+                <hr />,
+              ])}
             </ul>
 
             <div>

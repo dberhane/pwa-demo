@@ -1,5 +1,27 @@
+header.sticky {
+  background-color: #403f99;
+}
+
+header.sticky a.button:hover {
+  background-color: #4d4bb1;
+  text-decoration: none !important;
+}
+
+header.sticky a.button {
+  background: transparent;
+}
+
+header.sticky label.button:hover {
+  background-color: #4d4bb1;
+  text-decoration: none !important;
+}
+
+header.sticky label.button {
+  background: transparent !important;
+}
+
 .drawer nav {
-  background-color: blueviolet;
+  background-color: #403f99;
 }
 .drawer .close {
   background-color:azure;
@@ -8,7 +30,19 @@
   color:azure
 }
 
-.drawer nav a .button {
-  background-color: blueviolet;
-  background: transparent;
+.drawer nav a.button:hover {
+  background-color: #4d4bb1;
+  text-decoration: none !important;
+}
+
+.drawer nav a.button {
+  background-color: #403f99;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+a {
+  text-decoration: none !important;
 }
