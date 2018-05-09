@@ -5,7 +5,7 @@ import logo from './bmjopen-logo.png'
 
 const Header = () => (
   <div className="container">
-    <div className="row">
+    <div className="row" style={{justifyContent:"center"}}>
       <Link to={'/'}>
         <img src={banner} alt="banner" />
       </Link>

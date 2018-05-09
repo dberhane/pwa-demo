@@ -1,5 +1,6 @@
 header.sticky {
   background-color: #403f99;
+  padding: 5px 15px 3px;
 }
 
 header.sticky a.button:hover {
