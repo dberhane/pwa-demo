@@ -1,0 +1,2 @@
+webpackJsonp([0x88b13749f410],{724:function(t,n){t.exports={data:{allWordpressPost:null},pathContext:{slug:"new-post",name:"new post"}}}});
+//# sourceMappingURL=path---post-category-new-post-e7016e2d340bbc877e51.js.map
