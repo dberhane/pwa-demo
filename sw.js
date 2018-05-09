@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/pwa-demo/app-008d4e210e5a829653bb.js","cb7cc2b7e138de960cd45f2644b965f1"],["/pwa-demo/app-82c1ec8f1e86845c7805.js","dad87060f5cfa7bed3bf63cd7671aed8"],["/pwa-demo/app-ba056191576af4b4ac90.js","8c43f76cf10830859ad3a66e9c0347a4"],["/pwa-demo/commons-403258ad126d5c26671b.js","6b687f96664c27977628ddce9cdc1aba"],["/pwa-demo/index.html","480eb2c13b3dd6299c925fc953f7ee5a"],["/pwa-demo/offline-plugin-app-shell-fallback/index.html","c90cf67506f3b51f9ce8fa254f413cdd"]];
+var precacheConfig = [["/pwa-demo/app-008d4e210e5a829653bb.js","cb7cc2b7e138de960cd45f2644b965f1"],["/pwa-demo/app-56ed860daff425611d5c.js","ba651bfaf63e30b0ad519c0349793e46"],["/pwa-demo/app-82c1ec8f1e86845c7805.js","dad87060f5cfa7bed3bf63cd7671aed8"],["/pwa-demo/app-ba056191576af4b4ac90.js","8c43f76cf10830859ad3a66e9c0347a4"],["/pwa-demo/commons-403258ad126d5c26671b.js","6b687f96664c27977628ddce9cdc1aba"],["/pwa-demo/index.html","96e7cafcfa327bf9b6f4a86d0c2eea8d"],["/pwa-demo/manifest.webmanifest","5a4a5c9855fc349a7707fc2e354e858c"],["/pwa-demo/offline-plugin-app-shell-fallback/index.html","f6bf5f1d4f036308df9a367f32778b3b"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
