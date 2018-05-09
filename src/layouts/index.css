@@ -45,10 +45,17 @@ header.sticky label.button {
   background-color: #403f99;
 }
 
+a:visited {
+  text-decoration: underline !important;
+  color: #403f99;
+}
+
 a:hover {
   text-decoration: underline !important;
+  color: #403f99;
 }
 
 a {
   text-decoration: none !important;
+  color: #403f99;
 }
