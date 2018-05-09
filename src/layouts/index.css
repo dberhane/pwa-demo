@@ -8,6 +8,11 @@ header.sticky a.button:hover {
   text-decoration: none !important;
 }
 
+header.sticky a.button:visited {
+  background-color: #4d4bb1;
+  text-decoration: none !important;
+}
+
 header.sticky a.button {
   background: transparent;
 }

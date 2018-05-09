@@ -7,6 +7,10 @@ import './index.css'
 import 'mini.css/dist/mini-default.min.css'
 //import 'mini.css/dist/mini-pwa.min.css'
 
+import BlogRoll from '../components/BlogRoll'
+//import MostRead from '../components/MostRead'
+//import Categories from '../components/Categories'
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -17,7 +21,22 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div>{children()}</div>
+
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-12 col-md-12 col-lg-7 col-lg-offset-1">
+          {children()}
+        </div>
+
+        <div className="col-sm-12 col-md-12 col-lg-3">
+          <div width={4}>
+            <categories />
+            <BlogRoll />
+            <mostRead />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <p>
