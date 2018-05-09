@@ -7,11 +7,15 @@ const AllCategories = ({ categories }) => {
     <div style={{ marginTop: 50 }}>
       <h2>Categories</h2>
       <ul style={{ listStyleType: 'none', paddingBottom: 20 }}>
-        {categories.map(({ node }) => (
-          <li style={{ paddingBottom: 5 }}>
-            <Link to={`/post/category/${node.slug}`}>{node.name}</Link>
-          </li>
-        ))}
+        {categories.map(({ node }) => {
+          if (node.name != 'new post') {
+            return (
+              <li key={node.id} style={{ paddingBottom: 5 }}>
+                <Link to={`/post/category/${node.slug}`}>{node.name}</Link>
+              </li>
+            )
+          }
+        })}
       </ul>
     </div>
   )
