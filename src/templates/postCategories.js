@@ -6,30 +6,36 @@ import BlogRoll from '../components/BlogRoll'
 
 class PostTemplate extends Component {
   render() {
-
     const postCategory = this.props.pathContext.name
     const posts = this.props.data.allWordpressPost.edges
 
     return (
-      <div>
+      <div style={{ marginTop: 40 }}>
         <h1>Category: {postCategory}</h1>
-
-        {posts.map(({ node }) => (
-          <div key={node.id}>
-            <h2>
-              <Link to={`/post/${node.slug}`}>{node.title}</Link>
-            </h2>
-            <div
-              className="excerpt"
-              dangerouslySetInnerHTML={{ __html: node.excerpt }}
-            />
-            <i>{node.date}</i>
-          </div>
-        ))}
-
-        <div>
-          <BlogRoll />
-        </div>
+        <ul
+          className="postItems"
+          style={{ listStyleType: 'none', margin: 0, padding: 0 }}
+        >
+          {posts.map(({ node }) => [
+            <li
+              key={node.id}
+              className={'post'}
+              style={{ marginTop: 20, marginBottom: 40 }}
+            >
+              <Link to={`/post/${node.slug}`}>
+                <h3>{node.title}</h3>
+              </Link>
+              <div
+                className="excerpt"
+                dangerouslySetInnerHTML={{ __html: node.excerpt }}
+              />
+              <div style={{ paddingLeft: 10 }}>
+                <i>{node.date}</i>
+              </div>
+            </li>,
+            <hr />,
+          ])}
+        </ul>
       </div>
     )
   }
@@ -52,7 +58,7 @@ export const pageQuery = graphql`
           id
           title
           slug
-          date
+          date(formatString: "MMMM DD, YYYY")
           excerpt
           categories {
             id

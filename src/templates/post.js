@@ -14,9 +14,6 @@ class PostTemplate extends Component {
           <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
-        <div width={4}>
-          <BlogRoll />
-        </div>
       </div>
     )
   }
