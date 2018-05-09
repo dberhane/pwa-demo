@@ -57,14 +57,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         categories.forEach(edge => {
           // console.log(edge)
-          createPage({
-            path: `/post/category/${edge.node.slug}/`,
-            component: slash(postCategoriesTemplate),
-            context: {
-              slug: edge.node.slug,
-              name: edge.node.name,
-            },
-          })
+          if(edge.node.slug !="new-post") {
+            createPage({
+              path: `/post/category/${edge.node.slug}/`,
+              component: slash(postCategoriesTemplate),
+              context: {
+                slug: edge.node.slug,
+                name: edge.node.name,
+              },
+            })  
+          }
         })
       })
     )

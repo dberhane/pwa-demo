@@ -7,8 +7,9 @@ import BlogRoll from '../components/BlogRoll'
 class PostTemplate extends Component {
   render() {
     const postCategory = this.props.pathContext.name
+  //  console.log(this.props.data)
     const posts = this.props.data.allWordpressPost.edges
-
+  
     return (
       <div style={{ marginTop: 40 }}>
         <h1>Category: {postCategory}</h1>

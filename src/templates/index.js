@@ -48,7 +48,7 @@ const IndexPage = ({ data, pathContext }) => {
           ])}
         </ul>
 
-        <div>
+        <div className="tocNav">
           <button>
             <NavLink
               test={first}
@@ -56,7 +56,7 @@ const IndexPage = ({ data, pathContext }) => {
               text="Previous Page"
             />
           </button>
-          <button>
+          <button style={{float:"right"}}>
             <NavLink test={last} url={'/' + nextUrl} text="Next Page" />
           </button>
         </div>

@@ -59,3 +59,21 @@ a {
   text-decoration: none !important;
   color: #403f99;
 }
+
+.tocNav button {
+  background-color: #4d4bb1;
+  text-decoration: none !important; 
+  color: white;
+}
+
+.tocNav button:hover {
+  background-color: #403f99;
+  text-decoration: none !important; 
+  color: white;
+}
+
+.tocNav button a {
+  background-color: #4d4bb1;
+  text-decoration: none !important; 
+  color: white;
+}
