@@ -19,7 +19,7 @@ const IndexPage = ({ data, pathContext }) => {
   const nextUrl = (index + 1).toString()
 
   return (
-      <div>
+      <div style={{marginTop: 40}}>
         <h1>Latest blogs</h1>
 
         <ul
@@ -82,15 +82,6 @@ export const query = graphql`
             pageTitle
             pageviews
           }
-        }
-      }
-    }
-    allWordpressCategory {
-      edges {
-        node {
-          id
-          name
-          slug
         }
       }
     }

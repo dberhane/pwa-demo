@@ -9,10 +9,10 @@ import 'mini.css/dist/mini-default.min.css'
 
 import BlogRoll from '../components/BlogRoll'
 //import MostRead from '../components/MostRead'
-//import Categories from '../components/Categories'
+import AllCategories from '../components/AllCategories'
 
 const Layout = ({ children, data }) => (
-  <div>
+ <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -30,7 +30,7 @@ const Layout = ({ children, data }) => (
 
         <div className="col-sm-12 col-md-12 col-lg-3">
           <div width={4}>
-            <categories />
+            <AllCategories categories={data.allWordpressCategory.edges} />
             <BlogRoll />
             <mostRead />
           </div>
@@ -58,6 +58,15 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allWordpressCategory {
+      edges {
+        node {
+          id
+          name
+          slug
+        }
       }
     }
   }
