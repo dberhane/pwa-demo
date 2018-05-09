@@ -12,9 +12,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     // Templates
     const pageTemplate = path.resolve('./src/templates/page.js')
     const postTemplate = path.resolve('./src/templates/post.js')
-    const postCategoriesTemplate = path.resolve(
-      './src/templates/postCategories.js'
-    )
+    const postCategoriesTemplate = path.resolve('./src/templates/postCategories.js')
 
     resolve(
       graphql(allQueries).then(result => {

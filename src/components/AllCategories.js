@@ -9,7 +9,7 @@ const AllCategories = ({ categories }) => {
       <ul style={{ listStyleType: 'none', paddingBottom: 20 }}>
         {categories.map(({ node }) => (
           <li style={{ paddingBottom: 5 }}>
-            <Link to="post">{node.name}</Link>
+            <Link to={`/post/category/${node.slug}`}>{node.name}</Link>
           </li>
         ))}
       </ul>
