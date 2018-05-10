@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    `gatsby-plugin-remove-trailing-slashes`,
 
     /*
      * Gatsby's data processing layer begins with “source”
