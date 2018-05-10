@@ -61,31 +61,31 @@ a {
 }
 
 .tocNav button {
-  background-color: #4d4bb1;
-  text-decoration: none !important; 
-  color: white;
-}
-
-.tocNav button:hover {
   background-color: #403f99;
   text-decoration: none !important; 
   color: white;
 }
 
-.tocNav button a {
+.tocNav button:hover {
   background-color: #4d4bb1;
   text-decoration: none !important; 
   color: white;
 }
 
+.tocNav button a {
+  background-color: #403f99;
+  text-decoration: none !important; 
+  color: white;
+}
+
 footer {
-  background: #4d4bb1 !important;
+  background: #403f99 !important;
   text-decoration: none !important; 
   color: white !important;
 }
 
 footer a {
-  background: #4d4bb1 !important;
+  background: #403f99 !important;
   text-decoration: none !important; 
   color: white !important;
 }
