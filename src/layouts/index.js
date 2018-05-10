@@ -43,8 +43,8 @@ const Layout = ({ children, data }) => (
 
     <footer>
       <p>
-        &copy; BMJ Publishing Group Ltd. 2018 | <a href="#">About</a> |{' '}
-        <a href="#">Terms of use</a>
+        &copy; BMJ Publishing Group Ltd. 2018 | <a href="/">About</a> |{' '}
+        <a href="/">Terms of use</a>
       </p>
     </footer>
   </div>

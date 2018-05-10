@@ -77,3 +77,15 @@ a {
   text-decoration: none !important; 
   color: white;
 }
+
+footer {
+  background: #4d4bb1 !important;
+  text-decoration: none !important; 
+  color: white !important;
+}
+
+footer a {
+  background: #4d4bb1 !important;
+  text-decoration: none !important; 
+  color: white !important;
+}
