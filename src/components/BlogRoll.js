@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const BlogRoll = () => (
-  <div style={{ paddingBottom: '2.5em' }}>
+  <div style={{ paddingBottom: '0.5em' }}>
     <h2>Blogroll</h2>
 
     <ul style={{ listStyleType: 'none', paddingBottom: 20 }}>

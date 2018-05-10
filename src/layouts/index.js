@@ -8,7 +8,7 @@ import 'mini.css/dist/mini-default.min.css'
 //import 'mini.css/dist/mini-pwa.min.css'
 
 import BlogRoll from '../components/BlogRoll'
-//import MostRead from '../components/MostRead'
+import MostRead from '../components/MostRead'
 import AllCategories from '../components/AllCategories'
 
 const Layout = ({ children, data }) => (
@@ -35,7 +35,7 @@ const Layout = ({ children, data }) => (
           <div width={4}>
             <AllCategories categories={data.allWordpressCategory.edges} />
             <BlogRoll />
-            <mostRead />
+            <MostRead gdata={data.allDataJson.edges} ghead="BMJ Open most read" />
           </div>
         </div>
       </div>
@@ -69,6 +69,24 @@ export const query = graphql`
           id
           name
           slug
+        }
+      }
+    }
+    allDataJson(filter: { id: { regex: "/.*bmjopen-last30days/" } }) {
+      edges {
+        node {
+          bmjsiteHead {
+            id
+            accountId
+            webPropertyId
+            name
+            websiteUrl
+          }
+          bmjsiteData {
+            pagePath
+            pageTitle
+            pageviews
+          }
         }
       }
     }
