@@ -22,12 +22,12 @@ const IndexPage = ({ data, pathContext }) => {
       <div style={{marginTop: 40}}>
         <h1>Latest blogs</h1>
 
-        <ul
+        <div
           className="postItems"
           style={{ listStyleType: 'none', margin: 0, padding: 0 }}
         >
           {group.map(({ node }) => [
-            <li
+            <div
               key={node.id}
               className={'post'}
               style={{ marginTop: 20, marginBottom: 40 }}
@@ -43,10 +43,10 @@ const IndexPage = ({ data, pathContext }) => {
               <div style={{ paddingLeft: 10 }}>
                 <i>{node.date}</i>
               </div>
-            </li>,
+            </div>,
             <hr />,
           ])}
-        </ul>
+        </div>
 
         <div className="tocNav">
           <button>
