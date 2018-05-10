@@ -17,10 +17,12 @@ const Layout = ({ children, data }) => (
       title={data.site.siteMetadata.title}
       meta={[
         {name: 'lang', content: 'en'},
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'PWA website' },
+        { name: 'keywords', content: 'paw, gatsby, react' },
       ]}
-    />
+    >
+     <html lang="en" />
+    </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
 
     <div className="container">
