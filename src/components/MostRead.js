@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const MostRead = ({ gdata, ghead = 'Most Read', gsite = 0 }) => {
   const mostReadItems = gdata[gsite].node.bmjsiteData
   const websiteUrl = gdata[gsite].node.bmjsiteHead[0].websiteUrl
-console.log(mostReadItems)
+
   return (
     <div>
       <h2>{ghead}</h2>
