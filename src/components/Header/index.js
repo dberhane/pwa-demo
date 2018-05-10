@@ -30,9 +30,9 @@ const Header = () => (
     </header>
     
     <div className="row hidden-md hidden-lg">
-    <input type="checkbox" id="drawer-checkboxx"/>
+    <input type="checkbox" name="drawer-checkbox" id="drawer-checkbox"/>
       <div className="col-md-3 drawer">
-      <label htmlFor="drawer-checkboxx" className="close"></label>
+      <label htmlFor="drawer-checkbox" className="close"></label>
         <nav>
           <Link className="button" to={'/'}>
             BMJ Open blogs
