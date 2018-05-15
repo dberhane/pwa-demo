@@ -34,7 +34,7 @@ header.sticky label.button {
   background-color:azure;
 }
 .drawer nav a,  .drawer nav a:visited {
-  color:azure
+  color:azure !important;
 }
 
 .drawer nav a.button:hover {
@@ -75,7 +75,7 @@ a h3 {
 .tocNav button:hover {
   background-color: #4d4bb1;
   text-decoration: none !important; 
-  color: white;
+  color: white !important;
 }
 
 .tocNav button a {
