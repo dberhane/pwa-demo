@@ -11,7 +11,7 @@ module.exports = `
             }
         }
         
-        allWordpressPost {
+        allWordpressPost(sort: {fields:[date], order: DESC}) {
             edges {
               node {
                 id
