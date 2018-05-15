@@ -10,21 +10,18 @@ const Header = () => (
         <img src={banner} alt="banner" />
       </Link>
     </div>
-    <header className="sticky">
+    <header className="sticky" style={{paddingRight:150}}>
     <label htmlFor="drawer-checkbox" className="button drawer-toggle"></label>
       <Link className="logo" to={'/'}>
         <img src={logo} alt="Logo" style={{ maxWidth: '12.0em' }} />
       </Link>
-      <Link className="button hidden-sm" to={'/'}>
-        BMJ Open blogs
-      </Link>
-      <Link className="button hidden-sm" to={'/'}>
+      <Link className="button hidden-sm" to='/page/about' style={{float:"right"}}>
         About us
       </Link>
-      <Link className="button hidden-sm" to={'/'}>
+      <Link className="button hidden-sm" to='/page/topic-index' style={{float:"right"}}>
         Topic Index
       </Link>
-      <Link className="button hidden-sm" to={'/'}>
+      <Link className="button hidden-sm" to={'/'} style={{float:"right"}}>
         Home
       </Link>
     </header>
@@ -38,11 +35,11 @@ const Header = () => (
             BMJ Open blogs
           </Link>
           <br/>
-          <Link className="button" to={'/'}>
+          <Link className="button" to='/page/about'>
             About us
           </Link>
           <br/>
-          <Link className="button" to={'/'}>
+          <Link className="button" to='/page/topic-index'>
             Topic Index
           </Link>
           <br/>
