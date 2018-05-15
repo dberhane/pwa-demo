@@ -15,6 +15,7 @@ header.sticky a.button:visited {
 
 header.sticky a.button {
   background: transparent;
+  color: white !important;
 }
 
 header.sticky label.button:hover {
@@ -80,7 +81,7 @@ a h3 {
 .tocNav button a {
   background-color: #403f99;
   text-decoration: none !important; 
-  color: white;
+  color: white !important;
 }
 
 footer {
