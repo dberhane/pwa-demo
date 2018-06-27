@@ -1,21 +1,24 @@
 {
   "name": "gatsby-starter-default",
   "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "2.0.0",
+  "author": "dberhane",
   "dependencies": {
-    "gatsby": "^1.9.260",
-    "gatsby-image": "^1.0.46",
-    "gatsby-link": "^1.6.44",
-    "gatsby-paginate": "^1.0.14",
-    "gatsby-plugin-manifest": "^1.0.21",
-    "gatsby-plugin-offline": "^1.0.16",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-remove-trailing-slashes": "^1.0.9",
-    "gatsby-source-filesystem": "^1.5.35",
-    "gatsby-source-wordpress": "^2.0.84",
-    "gatsby-transformer-json": "^1.0.17",
+    "gatsby": "next",
+    "gatsby-image": "next",
+    "gatsby-link": "next",
+    "gatsby-paginate": "latest",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-remove-trailing-slashes": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-source-wordpress": "next",
+    "gatsby-transformer-json": "next",
     "mini.css": "^2.3.7",
+    "postcss-flexbugs-fixes": "^3.3.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -30,7 +33,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.12.1"
+    "gh-pages": "^1.2.0",
+    "prettier": "^1.13.6"
   }
 }
