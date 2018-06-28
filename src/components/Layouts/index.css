@@ -1,0 +1,97 @@
+header.sticky {
+  background-color: #403f99;
+  padding: 5px 15px 3px;
+}
+
+header.sticky a.button:hover {
+  background-color: #4d4bb1;
+  text-decoration: none !important;
+}
+
+header.sticky a.button:visited {
+  background-color: #4d4bb1;
+  text-decoration: none !important;
+}
+
+header.sticky a.button {
+  background: transparent;
+  color: white !important;
+}
+
+header.sticky label.button:hover {
+  background-color: #4d4bb1;
+  text-decoration: none !important;
+}
+
+header.sticky label.button {
+  background: transparent !important;
+}
+
+.drawer nav {
+  background-color: #403f99;
+}
+.drawer .close {
+  background-color:azure;
+}
+.drawer nav a,  .drawer nav a:visited {
+  color:azure !important;
+}
+
+.drawer nav a.button:hover {
+  background-color: #4d4bb1;
+  text-decoration: none !important;
+}
+
+.drawer nav a.button {
+  background-color: #403f99;
+}
+
+a:visited {
+  text-decoration: underline !important;
+  color: #403f99;
+}
+
+a:hover {
+  text-decoration: underline !important;
+  color: #403f99;
+}
+
+a {
+  text-decoration: none !important;
+  color: #403f99 !important;
+}
+
+a h3 {
+  text-decoration: none !important;
+  color: #403f99;
+}
+
+.tocNav button {
+  background-color: #403f99;
+  text-decoration: none !important; 
+  color: white;
+}
+
+.tocNav button:hover {
+  background-color: #4d4bb1;
+  text-decoration: none !important; 
+  color: white !important;
+}
+
+.tocNav button a {
+  background-color: #403f99;
+  text-decoration: none !important; 
+  color: white !important;
+}
+
+footer {
+  background: #403f99 !important;
+  text-decoration: none !important; 
+  color: white !important;
+}
+
+footer a {
+  background: #403f99 !important;
+  text-decoration: none !important; 
+  color: white !important;
+}
