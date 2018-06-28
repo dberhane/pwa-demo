@@ -52,14 +52,14 @@ module.exports = {
         icon: "src/components/Header/bmjopen.png" // This path is relative to the root of the site.
       }
     },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
         path: `${__dirname}/src/data`
       }
-    },
-    `gatsby-transformer-json`,
+    },     
     `gatsby-plugin-offline`
   ],
 

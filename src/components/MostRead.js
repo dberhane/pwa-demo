@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const MostRead = ({ gdata, ghead = 'Most Read', gsite = 0 }) => {
   const mostReadItems = gdata[gsite].node.bmjsiteData

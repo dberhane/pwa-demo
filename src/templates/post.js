@@ -1,29 +1,23 @@
 import React, { Component } from "react"
-import PropTypes from "prop-types"
-
-
-import BlogRoll from '../components/BlogRoll'
+import { graphql } from "gatsby"
+import Layout from '../components/Layouts'
 
 class PostTemplate extends Component {
   render() {
     const post = this.props.data.wordpressPost
 
     return (
-      <div style={{marginTop:'1.5em'}}>
+      <Layout style={{marginTop:'1.5em'}}>
         <div>
           <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
-      </div>
+      </Layout>
     )
   }
 }
 //<img src={post.image.sizes.thumbnail} />
 
-PostTemplate.propTypes = {
-  data: PropTypes.object.isRequired,
-  edges: PropTypes.array
-}
 
 export default PostTemplate
 

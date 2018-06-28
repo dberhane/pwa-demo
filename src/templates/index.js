@@ -1,9 +1,6 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-
-import BlogRoll from '../components/BlogRoll'
-//import MostRead from '../components/MostRead'
-//import Categories from '../components/Categories'
+import React from 'react'
+import { Link } from 'gatsby'
+import Layout from '../components/Layouts'
 
 const NavLink = props => {
   if (!props.test) {
@@ -13,12 +10,13 @@ const NavLink = props => {
   }
 }
 
-const IndexPage = ({ data, pathContext }) => {
-  const { group, index, first, last, pageCount } = pathContext
-  const previousUrl = index - 1 == 1 ? '' : (index - 1).toString()
+const IndexPage = ({ pageContext }) => {
+  const { group, index, first, last } = pageContext
+  const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
   const nextUrl = (index + 1).toString()
 
   return (
+    <Layout>
       <div style={{marginTop: 40}}>
         <h1>Latest blogs</h1>
 
@@ -61,29 +59,8 @@ const IndexPage = ({ data, pathContext }) => {
           </button>
         </div>
       </div>
+    </Layout>  
   )
 }
 export default IndexPage
 
-export const query = graphql`
-  query allmostReadFeed {
-    allDataJson(filter: { id: { regex: "/.*bmjopen-last30days/" } }) {
-      edges {
-        node {
-          bmjsiteHead {
-            id
-            accountId
-            webPropertyId
-            name
-            websiteUrl
-          }
-          bmjsiteData {
-            pagePath
-            pageTitle
-            pageviews
-          }
-        }
-      }
-    }
-  }
-`

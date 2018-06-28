@@ -1,17 +1,16 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-
-import BlogRoll from '../components/BlogRoll'
+import { Link, graphql } from 'gatsby'
+import Layout from "../components/Layouts"
 
 class PostTemplate extends Component {
   render() {
-    const postCategory = this.props.pathContext.name
+    const postCategory = this.props.pageContext.name
   //  console.log(this.props.data)
     const posts = this.props.data.allWordpressPost.edges
   
     return (
-      <div style={{ marginTop: 40 }}>
+      <Layout style={{ marginTop: 40 }}>
         <h1>Category: {postCategory}</h1>
         <ul
           className="postItems"
@@ -37,7 +36,7 @@ class PostTemplate extends Component {
             <hr />,
           ])}
         </ul>
-      </div>
+      </Layout>
     )
   }
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const BlogRoll = () => (
   <div style={{ paddingBottom: '0.5em' }}>
