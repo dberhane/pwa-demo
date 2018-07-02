@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/pwa-demo/app-008d4e210e5a829653bb.js","cb7cc2b7e138de960cd45f2644b965f1"],["/pwa-demo/app-4f4f88568d44f8aa4e36.js","d3ea28fcd1dba7d2d86c066fafca0923"],["/pwa-demo/app-56ed860daff425611d5c.js","ba651bfaf63e30b0ad519c0349793e46"],["/pwa-demo/app-75696b164142c0d73e56.js","ce4f5a64eebf1810e8f898a04ee7a49c"],["/pwa-demo/app-82c1ec8f1e86845c7805.js","dad87060f5cfa7bed3bf63cd7671aed8"],["/pwa-demo/app-aaf4998df51ce9d75335.js","ca918165b19e8d61c83cec3e1168f742"],["/pwa-demo/app-ba056191576af4b4ac90.js","8c43f76cf10830859ad3a66e9c0347a4"],["/pwa-demo/commons-403258ad126d5c26671b.js","fba58fda866edf5318c24dcdb4220f47"],["/pwa-demo/index.html","6b50116bf19c7fb47a2a058097ab15e5"],["/pwa-demo/manifest.webmanifest","5a4a5c9855fc349a7707fc2e354e858c"],["/pwa-demo/offline-plugin-app-shell-fallback/index.html","205eddc2132b44592f518dd2dc6d4e9d"]];
+var precacheConfig = [["/pwa-demo/app-39bfcccbc04721874e6d.js","1594b118c28e2d30247eeacee33c010d"],["/pwa-demo/component---node-modules-gatsby-plugin-offline-app-shell-js-03ebf5dd648d03d8c81e.js","1b81c30272efd836a12714e47af4c5e5"],["/pwa-demo/index.html","9ea31110b95a3b91898503c0e11e32d5"],["/pwa-demo/manifest.webmanifest","5a4a5c9855fc349a7707fc2e354e858c"],["/pwa-demo/offline-plugin-app-shell-fallback/index.html","33afdbb3d752fc198272b7d7d9ed468e"],["/pwa-demo/webpack-runtime-4205b1c4544e57ab3ead.js","a30dac9946f3ec2815fc5755fdb83070"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
@@ -135,7 +135,7 @@ var urlsToCacheKeys = new Map(
     var relativeUrl = item[0];
     var hash = item[1];
     var absoluteUrl = new URL(relativeUrl, self.location);
-    var cacheKey = createCacheKey(absoluteUrl, hashParamName, hash, /(.\w{8}.woff2)/);
+    var cacheKey = createCacheKey(absoluteUrl, hashParamName, hash, /(.*js$|\/static\/)/);
     return [absoluteUrl.toString(), cacheKey];
   })
 );
