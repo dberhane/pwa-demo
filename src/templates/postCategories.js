@@ -52,7 +52,7 @@ export default PostTemplate
 
 export const pageQuery = graphql`
   query currentPostCategoriesQuery($slug: String!) {
-    allWordpressPost(filter: { categories: { slug: { eq: $slug } } }) {
+    allWordpressPost(filter: { categories: { elemMatch:{ slug: { eq: $slug } } } }) {
       edges {
         node {
           id
