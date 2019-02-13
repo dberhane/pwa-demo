@@ -4,21 +4,21 @@
   "version": "2.0.0",
   "author": "dberhane",
   "dependencies": {
-    "gatsby": "^2.0.85",
-    "gatsby-image": "^2.0.25",
-    "gatsby-link": "^2.0.7",
-    "gatsby-paginate": "latest",
-    "gatsby-plugin-manifest": "^2.0.13",
-    "gatsby-plugin-offline": "^2.0.21",
-    "gatsby-plugin-react-helmet": "^3.0.5",
-    "gatsby-plugin-remove-trailing-slashes": "^2.0.6",
-    "gatsby-source-filesystem": "^2.0.12",
-    "gatsby-source-wordpress": "^3.0.21",
-    "gatsby-transformer-json": "^2.1.6",
+    "gatsby": "^2.0.119",
+    "gatsby-image": "^2.0.29",
+    "gatsby-link": "^2.0.10",
+    "gatsby-paginate": "^1.0.17",
+    "gatsby-plugin-manifest": "^2.0.17",
+    "gatsby-plugin-offline": "^2.0.23",
+    "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-remove-trailing-slashes": "^2.0.7",
+    "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-source-wordpress": "^3.0.34",
+    "gatsby-transformer-json": "^2.1.8",
     "mini.css": "^2.3.7",
     "postcss-flexbugs-fixes": "^3.3.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
-    "prettier": "^1.15.3"
+    "prettier": "^1.16.4"
   }
 }
