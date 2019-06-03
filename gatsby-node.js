@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
           createPage: createPage,
           pageTemplate: 'src/templates/index.js',
           pageLength: 10,
-          pathPrefix: '',
+          pathPrefix: '/',
         })
 
         posts.forEach(edge => {
