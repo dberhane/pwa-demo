@@ -4,16 +4,16 @@
   "version": "2.0.0",
   "author": "dberhane",
   "dependencies": {
-    "gatsby": "^2.13.21",
-    "gatsby-image": "^2.2.6",
-    "gatsby-link": "^2.2.2",
+    "gatsby": "^2.19.19",
+    "gatsby-image": "^2.2.41",
+    "gatsby-link": "^2.2.29",
     "gatsby-paginate": "^1.1.0",
-    "gatsby-plugin-manifest": "^2.2.3",
-    "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-manifest": "^2.2.41",
+    "gatsby-plugin-offline": "^3.0.35",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-remove-trailing-slashes": "^2.1.2",
     "gatsby-source-filesystem": "^2.1.5",
-    "gatsby-source-wordpress": "^3.1.8",
+    "gatsby-source-wordpress": "^3.1.62",
     "gatsby-transformer-json": "^2.2.2",
     "mini.css": "^2.3.7",
     "postcss-flexbugs-fixes": "^3.3.1",
@@ -34,6 +34,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.19.1"
   }
 }
